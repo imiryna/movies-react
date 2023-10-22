@@ -3,7 +3,7 @@ import { fetchTrendingMovies } from 'components/services/api';
 import { toast } from 'react-toastify';
 import { MoviesList } from 'components/MoviesList/moviesList';
 import { Loader } from 'components/Loader/loader';
-import { ContainerCss } from './pageStaled/page';
+import { ContainerCss } from './page.styled';
 
 export const Home = () => {
   const [movies, setMovies] = useState([]);

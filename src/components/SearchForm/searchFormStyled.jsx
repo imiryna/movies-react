@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const SectionCss = styled.header`
   padding-top: 20px;
@@ -13,7 +13,7 @@ export const SearchFormCss = styled.form`
   background: linear-gradient(#f4f4f2cc, rgba(30, 30, 30, 0.6));
   box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
     0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12); */
-    display: flex;
+  display: flex;
   align-items: center;
   width: 100%;
   max-width: 600px;
@@ -39,7 +39,6 @@ export const SearchInputCss = styled.input`
   border-radius: 4px;
   transition: border-color 0.3s, box-shadow 0.3s;
 
-
   &::placeholder {
     font: inherit;
     color: #cccccc;
@@ -51,7 +50,7 @@ export const SearchInputCss = styled.input`
 `;
 
 export const SearchButtonCss = styled.button`
-  position:absolute;
+  position: absolute;
   top: 0;
   left: 50%;
   display: inline-block;
