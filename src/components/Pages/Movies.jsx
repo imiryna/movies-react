@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import * as API from 'components/services/api';
+import { fetchSearchMovie } from 'components/services/api';
 import { toast } from 'react-toastify';
 import { SearchForm } from 'components/SearchForm/searchForm';
 import { MoviesList } from 'components/MoviesList/moviesList';
@@ -11,7 +11,7 @@ export const Movies = () => {
 
   const fetchData = async queryString => {
     try {
-      const { results } = await API.fetchSearchMovie(queryString);
+      const { results } = await fetchSearchMovie(queryString);
 
       setSearchMovies(results);
     } catch (error) {

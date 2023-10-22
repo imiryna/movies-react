@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import * as API from 'components/services/api';
+import { fetchMovieBiId } from 'components/services/api';
 import { MovieCard } from 'components/MovieCard/movieCard';
 import { toast } from 'react-toastify';
 import { Loader } from 'components/Loader/loader';
@@ -17,7 +17,7 @@ export const MovieDetails = () => {
     const fetchMovieDetails = async searchedMovieId => {
       try {
         setIsloader(true);
-        const movie = await API.fetchMovieBiId(searchedMovieId);
+        const movie = await fetchMovieBiId(searchedMovieId);
         setMoviesInfo(movie);
       } catch (error) {
         setError(error.message);
