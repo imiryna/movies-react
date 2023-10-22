@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { fetchTrendingMovies } from 'components/services/api';
+import { fetchTrendingMovies } from 'services/api';
 import { toast } from 'react-toastify';
 import { MoviesList } from 'components/MoviesList/moviesList';
 import { Loader } from 'components/Loader/loader';

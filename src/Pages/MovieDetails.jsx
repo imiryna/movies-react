@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { fetchMovieBiId } from 'components/services/api';
+import { fetchMovieBiId } from 'services/api';
 import { MovieCard } from 'components/MovieCard/movieCard';
 import { toast } from 'react-toastify';
 import { Loader } from 'components/Loader/loader';

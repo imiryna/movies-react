@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { fetchSearchMovie } from 'components/services/api';
+import { fetchSearchMovie } from 'services/api';
 import { toast } from 'react-toastify';
 import { SearchForm } from 'components/SearchForm/searchForm';
 import { MoviesList } from 'components/MoviesList/moviesList';
