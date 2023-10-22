@@ -5,7 +5,7 @@ import { MoviesList } from 'components/MoviesList/moviesList';
 import { Loader } from 'components/Loader/loader';
 import { ContainerCss } from './page.styled';
 
-export const Home = () => {
+const Home = () => {
   const [movies, setMovies] = useState([]);
   const [error, setError] = useState(null);
   const [isloader, setIsloader] = useState(false);
@@ -37,3 +37,5 @@ export const Home = () => {
     </>
   );
 };
+
+export default Home;

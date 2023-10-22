@@ -55,8 +55,8 @@ export const MovieDescr = styled.ul`
 export const MovieCardTitle = styled.p`
   font-family: 'Roboto Medium', sans-serif;
   font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
+  font-weight: 400;
+  font-size: 12px;
   line-height: 1.1;
   text-transform: uppercase;
   color: rgb(0, 0, 0);
@@ -66,8 +66,8 @@ export const MovieCardTitle = styled.p`
 export const TextCss = styled.p`
   font-family: 'Roboto Medium', sans-serif;
   font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
+  font-weight: 600;
+  font-size: 16px;
   line-height: 1.1;
   text-transform: uppercase;
   color: #050505;

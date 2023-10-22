@@ -6,10 +6,14 @@ import { Loader } from 'components/Loader/loader';
 import { useParams } from 'react-router';
 import { GoBack } from 'components/Button/goBack';
 
-export const MovieDetails = () => {
+// import {useLocation} from 'react-router-dom'
+
+const MovieDetails = () => {
   const [moviesInfo, setMoviesInfo] = useState('');
   const [error, setError] = useState(null);
   const [isloader, setIsloader] = useState(false);
+
+  // const location = useLocation();
 
   const { movieId } = useParams();
 
@@ -31,10 +35,12 @@ export const MovieDetails = () => {
 
   return (
     <>
-      <GoBack />
+      <GoBack movieId={movieId}/>
       {error && <div>Oh no! Something does wrong: {error}</div>}
       {moviesInfo && <MovieCard moviesInfo={moviesInfo} />}
       {isloader && <Loader />}
     </>
   );
 };
+
+export default MovieDetails;

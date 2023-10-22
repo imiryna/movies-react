@@ -1,11 +1,17 @@
-import {Outlet } from 'react-router-dom'
-import {HeaderCss, NavigationCss, NavListcss,NavLinkCss, } from './layoutStylled'
+import { Suspense } from "react";
+import { Outlet } from 'react-router-dom';
+import {
+  HeaderCss,
+  NavigationCss,
+  NavListcss,
+  NavLinkCss,
+} from './layoutStylled';
 
-export const Layout = ()=>{
-    return(
+const Layout = () => {
+  return (
     <>
-     <div>
-     <HeaderCss>
+      <div>
+        <HeaderCss>
           <NavigationCss>
             <NavListcss>
               <li>
@@ -17,8 +23,12 @@ export const Layout = ()=>{
             </NavListcss>
           </NavigationCss>
         </HeaderCss>
-        <Outlet />
-     </div>
+        <Suspense fallback={<div>Loading page...</div>}>
+          <Outlet />
+        </Suspense>
+      </div>
     </>
-    )
-}
+  );
+};
+
+export default Layout;

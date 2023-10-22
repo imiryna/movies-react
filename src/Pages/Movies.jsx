@@ -5,7 +5,7 @@ import { SearchForm } from 'components/SearchForm/searchForm';
 import { MoviesList } from 'components/MoviesList/moviesList';
 import { ContainerCss } from './page.styled';
 
-export const Movies = () => {
+const Movies = () => {
   const [error, setError] = useState(null);
   const [searchMovies, setSearchMovies] = useState([]);
 
@@ -30,3 +30,5 @@ export const Movies = () => {
     </>
   );
 };
+
+export  default Movies;
