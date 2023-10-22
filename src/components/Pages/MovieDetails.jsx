@@ -27,7 +27,7 @@ export const MovieDetails = () => {
       }
     };
     fetchMovieDetails(movieId);
-  }, []);
+  }, [movieId]);
 
   return (
     <>
