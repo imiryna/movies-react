@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import { fetchTrendingMovies } from '../services/api';
+import { fetchTrendingMovies } from 'components/services/api';
 import { toast } from 'react-toastify';
-import { MoviesList } from '../MoviesList/moviesList';
+import { MoviesList } from 'components/MoviesList/moviesList';
 import { Loader } from 'components/Loader/loader';
 import { ContainerCss } from './pageStaled/page';
 

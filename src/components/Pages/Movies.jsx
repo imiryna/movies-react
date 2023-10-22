@@ -1,8 +1,8 @@
 import {useState} from 'react';
-import * as API from '../services/api';
+import * as API from 'components/services/api';
 import { toast } from 'react-toastify';
-import {SearchForm} from '../SearchForm/searchForm';
-import {MoviesList} from '../MoviesList/moviesList';
+import {SearchForm} from 'components/SearchForm/searchForm';
+import {MoviesList} from 'components/MoviesList/moviesList';
 import { ContainerCss } from './pageStaled/page';
 
 export const Movies = ()=>{
