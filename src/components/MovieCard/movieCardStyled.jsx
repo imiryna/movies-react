@@ -1,10 +1,12 @@
-import styled from "styled-components";
+import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 
 export const ContainerCardCss = styled.div`
- position: relative;
- display:flex;
+  position: relative;
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 10px;
 
- 
   cursor: pointer;
   text-decoration: none;
   flex-basis: calc((100% - 2 * 16px) / 3);
@@ -38,19 +40,18 @@ export const MovieCardImg = styled.img`
   border-radius: 5px;
 `;
 export const MovieDescrCs = styled.div`
-    width: 300px;
+  width: 300px;
   padding: 0 8px;
   border-radius: 5px;
   margin-right: 24px;
-  margin-left:44px;
-`
+  margin-left: 44px;
+`;
 
 export const MovieDescr = styled.ul`
-    width: 500px;
+  width: 500px;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
- 
 `;
 export const MovieCardTitle = styled.p`
   font-family: 'Roboto Medium', sans-serif;
@@ -60,7 +61,7 @@ export const MovieCardTitle = styled.p`
   line-height: 1.1;
   text-transform: uppercase;
   color: rgb(0, 0, 0);
-  margin-bottom:10px;
+  margin-bottom: 10px;
 `;
 
 export const TextCss = styled.p`
@@ -74,5 +75,25 @@ export const TextCss = styled.p`
   margin: 0;
 `;
 
-
-
+export const Header = styled.h1`
+  text-align: center;
+  margin: 24px 0 5px 0;
+  font-size: 1.2rem;
+  font-weight: 400;
+`;
+export const Div = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  padding-left: 35px;
+`;
+export const NavLinkCss = styled(NavLink)`
+  background-color: #39086a;
+  color: #fff;
+  border: 1px solid #935bcb;
+  border-radius: 30px;
+  padding: 5px;
+  height: 28px;
+  width: 120px;
+  text-align: center;
+`;

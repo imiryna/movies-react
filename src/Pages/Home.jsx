@@ -4,6 +4,7 @@ import { toast } from 'react-toastify';
 import { MoviesList } from 'components/MoviesList/moviesList';
 import { Loader } from 'components/Loader/loader';
 import { ContainerCss } from './page.styled';
+import { TrendingTitle, TextError } from './page.styled';
 
 const Home = () => {
   const [movies, setMovies] = useState([]);
@@ -30,7 +31,8 @@ const Home = () => {
   return (
     <>
       <ContainerCss>
-        {error && <duv>Oh no! Something does wron: {error}</duv>}
+        <TrendingTitle>Trending movies</TrendingTitle>
+        {error && <TextError>Oh no! Something does wron: {error}</TextError>}
         {movies.length > 0 && <MoviesList moviesList={movies} />}
       </ContainerCss>
       {isloader && <Loader />}

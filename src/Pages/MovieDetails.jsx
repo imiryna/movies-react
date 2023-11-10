@@ -5,6 +5,16 @@ import { toast } from 'react-toastify';
 import { Loader } from 'components/Loader/loader';
 import { useParams } from 'react-router';
 import { GoBack } from 'components/Button/goBack';
+// import {
+//   Button,
+//   Wrapper,
+//   Poster,
+//   MovieCard,
+//   Info,
+//   Title,
+//   Header,
+//   TextData,
+// } from './page.styled';
 
 // import {useLocation} from 'react-router-dom'
 
@@ -35,7 +45,7 @@ const MovieDetails = () => {
 
   return (
     <>
-      <GoBack movieId={movieId}/>
+      <GoBack movieId={movieId} />
       {error && <div>Oh no! Something does wrong: {error}</div>}
       {moviesInfo && <MovieCard moviesInfo={moviesInfo} />}
       {isloader && <Loader />}

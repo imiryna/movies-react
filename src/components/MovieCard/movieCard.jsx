@@ -1,4 +1,4 @@
-import { NavLink, Outlet } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import {
   ContainerCardCss,
   MovieCardImg,
@@ -6,6 +6,9 @@ import {
   MovieDescrCs,
   MovieCardTitle,
   TextCss,
+  Header,
+  Div,
+  NavLinkCss,
 } from './movieCardStyled';
 
 export const MovieCard = ({ moviesInfo }) => {
@@ -30,15 +33,11 @@ export const MovieCard = ({ moviesInfo }) => {
           ))}
         </MovieDescr>
       </ContainerCardCss>
-      <h1>Additional information</h1>
-      <ul>
-        <li>
-          <NavLink to="cast">Cast</NavLink>
-        </li>
-        <li>
-          <NavLink to="reviews">Reviews</NavLink>
-        </li>
-      </ul>
+      <Header>Additional information</Header>
+      <Div>
+        <NavLinkCss to="cast">Cast</NavLinkCss>
+        <NavLinkCss to="reviews">Reviews</NavLinkCss>
+      </Div>
       <Outlet />
     </>
   );

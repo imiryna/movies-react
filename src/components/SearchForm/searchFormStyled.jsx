@@ -56,20 +56,20 @@ export const SearchButtonCss = styled.button`
   display: inline-block;
   width: 80px;
   height: 48px;
-  border: 1px solid #eeaeca;
+  border: 1px solid #935bcb;
   /* border-radius: 4px; */
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 
   background-color: #5cabf5;
-  color: #eeaeca;
+  color: #fff;
   font: inherit;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-family: inherit;
   font-size: 20px;
 
   &:hover {
-    background-color: #eeaeca;
+    background-color: #935bcb;
     color: #b0d6f9;
   }
 `;

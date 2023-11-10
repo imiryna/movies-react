@@ -3,6 +3,7 @@ import { useParams } from 'react-router';
 import { fetchMoviemovieCredits } from 'services/api';
 import { toast } from 'react-toastify';
 import { Loader } from 'components/Loader/loader';
+import { List, Item } from './cast.styled';
 
 const Cast = () => {
   const [cast, setCast] = useState([]);
@@ -19,7 +20,7 @@ const Cast = () => {
       try {
         setIsLoading(true);
         const { cast } = await fetchMoviemovieCredits(castMovieID);
-        
+
         setCast(cast);
       } catch (error) {
         setError(error.message);
@@ -36,16 +37,21 @@ const Cast = () => {
   return (
     <>
       {error && <div>Oh no! Something does wron: {error}</div>}
-      <ul>
+      <List>
         {cast.map(item => (
-          <li>
-            <img src={BASE_IMG_URL + item.profile_path} alt={item.name} />
+          <Item>
+            <img
+              src={BASE_IMG_URL + item.profile_path}
+              width="200px"
+              height="300px"
+              alt={item.name}
+            />
             <p>{item.name}</p>
             <p>Character: {item.character}</p>
-            <hr/>
-          </li>
+            <hr />
+          </Item>
         ))}
-      </ul>
+      </List>
       {isLoading && <Loader />}
     </>
   );
