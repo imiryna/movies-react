@@ -1,14 +1,15 @@
 import styled from 'styled-components';
 
 export const MovieList = styled.ul`
+  margin-top: 16px;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  gap: 15px;
+  margin-left: 40px;
+  margin-right: 40px;
+  gap: 16px;
   display: flex;
   position: relative;
-  padding: 10px;
+  margin-bottom: 24px;
   list-style: none;
 `;
 
@@ -22,8 +23,8 @@ export const Items = styled.li`
 `;
 
 export const MovieCardImg = styled.img`
-  width: 300px;
-  height: 400px;
+  width: 260px;
+  height: 360px;
   border-radius: 5px;
 `;
 
@@ -35,8 +36,8 @@ export const MovieCardInfo = styled.div`
   display: flex;
   flex-direction: column;
   gap: 5px;
-  padding-left: 12px;
-  padding-right: 12px;
+  /* padding-left: 12px; */
+  /* padding-right: 12px; */
   padding-bottom: 12px;
   width: 200px;
 `;

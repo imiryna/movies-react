@@ -35,6 +35,7 @@ export const NavListcss = styled.ul`
 
 export const NavLinkCss = styled(NavLink)`
   text-decoration: none;
+  list-style: none;
   font-weight: 500;
   font-size: 1.5rem;
   color: #021c35;

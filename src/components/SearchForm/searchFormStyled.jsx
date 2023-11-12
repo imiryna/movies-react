@@ -3,16 +3,10 @@ import styled from 'styled-components';
 export const SectionCss = styled.header`
   padding-top: 20px;
   padding-bottom: 50px;
+  margin-left: 55px;
 `;
 
 export const SearchFormCss = styled.form`
-  /* display: flex;
-  align-items: center;
-  justify-content: start;
-  padding: 20px 0 20px 0;
-  background: linear-gradient(#f4f4f2cc, rgba(30, 30, 30, 0.6));
-  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
-    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12); */
   display: flex;
   align-items: center;
   width: 100%;
@@ -69,7 +63,7 @@ export const SearchButtonCss = styled.button`
   font-size: 20px;
 
   &:hover {
-    background-color: #935bcb;
-    color: #b0d6f9;
+    background-color: rgba(232, 235, 25, 1);
+    color: #131415;
   }
 `;

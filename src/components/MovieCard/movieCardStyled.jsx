@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
 export const ContainerCardCss = styled.div`
+  /* width: 1320px; */
   position: relative;
   display: flex;
   padding-top: 15px;
@@ -25,7 +26,7 @@ export const ContainerCardCss = styled.div`
     background-image: linear-gradient(
       180deg,
       #00000000 63.48%,
-      rgba(0, 0, 0, 0.902) 100%
+      rgba(59, 57, 57, 0.902) 100%
     );
   }
   &:hover,
@@ -35,8 +36,8 @@ export const ContainerCardCss = styled.div`
 `;
 
 export const MovieCardImg = styled.img`
-  width: 300px;
-  height: 400px;
+  width: 260px;
+  height: 360px;
   border-radius: 5px;
 `;
 export const MovieDescrCs = styled.div`
@@ -76,10 +77,9 @@ export const TextCss = styled.p`
 `;
 
 export const Header = styled.h1`
-  text-align: center;
-  margin: 24px 0 5px 0;
+  margin: 24px 0 5px 10px;
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 500;
 `;
 export const Div = styled.div`
   display: flex;
@@ -88,12 +88,16 @@ export const Div = styled.div`
   padding-left: 35px;
 `;
 export const NavLinkCss = styled(NavLink)`
-  background-color: #39086a;
+  background-color: rgb(27, 163, 196);
+  list-style: none;
   color: #fff;
-  border: 1px solid #935bcb;
+  border: 1px solid #4a484b;
   border-radius: 30px;
   padding: 5px;
   height: 28px;
   width: 120px;
   text-align: center;
+
+  &:hover {
+  }
 `;

@@ -1,16 +1,27 @@
 import styled from 'styled-components';
 
 export const ContainerCss = styled.div`
-  padding-left: 20px;
-  padding-right: 20px;
+  width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 /* general*/
 
 export const HomeContainer = styled.div`
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 16px;
+  min-width: 335px;
+
+  @media screen and (max-width: 768px) {
+    min-width: 704px;
+    margin-left: 24px;
+    margin-left: 24px;
+  }
+
+  @media screen and (max-width: 1440px) {
+    min-width: 1100px;
+    margin-left: 40px;
+    margin-left: 40px;
+  }
 `;
 
 export const TextError = styled.p`
