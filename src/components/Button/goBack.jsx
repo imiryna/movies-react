@@ -6,7 +6,7 @@ export const GoBack = ({ movieId }) => {
   const navigate = useNavigate();
 
   const handleOnClick = () => {
-    //?? ('/movies')
+    navigate(location.state?.from.pathname);
   };
 
   return (
