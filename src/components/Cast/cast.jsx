@@ -45,6 +45,7 @@ const Cast = () => {
               width="200px"
               height="300px"
               alt={item.name}
+              key={item.id}
             />
             <p>{item.name}</p>
             <p>Character: {item.character}</p>
